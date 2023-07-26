@@ -16,6 +16,22 @@
         * {
             font-family: 'Lato', sans-serif;
         }
+
+        .banner-1 {
+            background-image: url("images/banner1.png");
+        }
+
+        .banner-2 {
+            background-image: url("images/banner2.png");
+        }
+
+        .banner-3 {
+            background-image: url("images/banner3.png");
+        }
+
+        .banner-4 {
+            background-image: url("images/banner4.png");
+        }
     </style>
 
 </head>
@@ -24,7 +40,7 @@
     <header class="container mx-auto">
         <!-- navbar section -->
         <div
-            class="flex items-center justify-between flex-row-reverse lg:flex-row lg:justify-around bg-base-100 lg:bg-[#F85559] lg:rounded-[600px] lg:text-white my-12 py-7 px-4 lg:px-0 mx-3">
+            class="flex items-center justify-between flex-row-reverse lg:flex-row lg:justify-around bg-base-100 lg:bg-[#F85559] lg:rounded-[600px] lg:text-white my-12 py-7 px-4 lg:px-0 mx-3 mb-14">
             <div class="lg:hidden dropdown">
                 <label tabindex="0" class="btn btn-ghost btn-circle m-12">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -44,11 +60,11 @@
 
             <div class="hidden md:hidden lg:block w-[280px]">
                 <ul class="flex justify-around">
-                <li><a>Home</a></li>
-                <li><a>Shop</a></li>
-                <li><a>About Us</a></li>
-                <li><a>All fruits</a></li>
-            </ul>
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>All fruits</a></li>
+                </ul>
             </div>
 
             <div class="flex items-center">
@@ -57,10 +73,66 @@
             </div>
 
             <div class="relative hidden md:hidden lg:block ">
-                <input type="text" placeholder="Search here" class="input input-bordered rounded-[50px] w-full pr-16" /> 
-                <button class="btn bg-transparent absolute top-0 right-0 border-0"><i class="fa-solid fa-magnifying-glass"></i></button>
-              </div>
+                <input type="text" placeholder="Search here" class="input input-bordered rounded-[50px] w-full pr-16" />
+                <button class="btn bg-transparent absolute top-0 right-0 border-0"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
         </div>
+
+        <!-- banner section -->
+        <section class="hidden md:hidden lg:block">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full banner-1 h-[600px] opacity-75 text-center
+             flex flex-col justify-center items-center">
+                    <div>
+                        <h3 class="text-7xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h3>
+                        <p class="text-lg font-medium text-white my-7">We supply highly quality organic products</p>
+                        <button class="text-lg text-white px-7 py-5 bg-[#F85559] rounded-lg">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full banner-2 h-[600px] opacity-75 text-center
+            flex flex-col justify-center items-center">
+                    <div>
+                        <h3 class="text-7xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h3>
+                        <p class="text-lg font-medium text-white my-7">We supply highly quality organic products</p>
+                        <button class="text-lg text-white px-7 py-5 bg-[#F85559] rounded-lg">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full banner-3 h-[600px] opacity-75 text-center
+            flex flex-col justify-center items-center">
+                    <div>
+                        <h3 class="text-7xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h3>
+                        <p class="text-lg font-medium text-white my-7">We supply highly quality organic products</p>
+                        <button class="text-lg text-white px-7 py-5 bg-[#F85559] rounded-lg">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full banner-4 h-[600px] opacity-75 text-center
+            flex flex-col justify-center items-center">
+                    <div>
+                        <h3 class="text-7xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h3>
+                        <p class="text-lg font-medium text-white my-7">We supply highly quality organic products</p>
+                        <button class="text-lg text-white px-7 py-5 bg-[#F85559] rounded-lg">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </header>
 
     <main>
