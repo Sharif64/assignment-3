@@ -32,6 +32,10 @@
         .banner-4 {
             background-image: url("images/banner4.png");
         }
+
+        .time {
+            word-spacing: 24px;
+        }
     </style>
 
 </head>
@@ -40,7 +44,7 @@
     <header class="container mx-auto">
         <!-- navbar section -->
         <div
-            class="flex items-center justify-between flex-row-reverse lg:flex-row lg:justify-around bg-base-100 lg:bg-[#F85559] lg:rounded-[600px] lg:text-white my-12 py-7 px-4 lg:px-0 mx-3 mb-14">
+            class="flex items-center justify-between flex-row-reverse lg:flex-row lg:justify-around bg-base-100 lg:bg-[#F85559] lg:rounded-[600px] lg:text-white my-12 py-3 md:py-4 lg:py-7 px-4 lg:px-0 mx-3 mb-14">
             <div class="lg:hidden dropdown">
                 <label tabindex="0" class="btn btn-ghost btn-circle m-12">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -80,7 +84,7 @@
         </div>
 
         <!-- banner section -->
-        <section class="hidden md:hidden lg:block relative">
+        <section class="relative">
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full banner-1 h-[600px] opacity-75 text-center
              flex flex-col justify-center items-center">
@@ -133,18 +137,18 @@
             </div>
 
             <!-- banner fruits section -->
-            <div class="absolute top-[475px] left-[90px] flex bg-white px-16 py-12 space-x-10 text-center rounded-lg">
+            <div class="hidden md:hidden lg:flex absolute top-[475px] left-[130px] bg-white px-16 py-12 space-x-10 text-center rounded-lg">
                 <div>
                     <img src="images/fruit1.png" alt="">
-                    <p class="text-lg font-medium">Strawberry</p>
+                    <p class="text-lg font-medium">Berry</p>
                 </div>
                 <div>
                     <img src="images/fruit2.png" alt="">
-                    <p class="text-lg font-medium">Strawberry</p>
+                    <p class="text-lg font-medium">Orange</p>
                 </div>
                 <div>
                     <img src="images/fruit3.png" alt="">
-                    <p class="text-lg font-medium">Strawberry</p>
+                    <p class="text-lg font-medium">Mango</p>
                 </div>
                 <div>
                     <img src="images/fruit4.png" alt="">
@@ -152,19 +156,36 @@
                 </div>
                 <div>
                     <img src="images/fruit5.png" alt="">
-                    <p class="text-lg font-medium">Strawberry</p>
-                </div>
-                <div>
-                    <img src="images/fruit6.png" alt="" class="w-24 h-28">
-                    <p class="text-lg font-medium">Strawberry</p>
+                    <p class="text-lg font-medium">Pomegranate</p>
                 </div>
             </div>
         </section>
 
     </header>
 
-    <main>
+    <main class="container mx-auto">
+        <!-- deal of the day section -->
+        <section class="mt-10 md:mt-30 lg:mt-60">
+            <div class="flex flex-col md:flex-col items-center lg:flex-row justify-between mb-12">
+                <div class="text-center md:text-center lg:text-left ">
+                    <h3 class="text-5xl font-extrabold">Deal of the day</h3>
+                    <p class="text-sm font-medium mt-6 mb-8 md:mb-8 lg:mb-0">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+                        Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div>
+                    <div class="flex gap-x-6">
+                        <div class="text-5xl font-extrabold">29 <br><span class="text-sm font-medium text-center"> Days</span></div>
+                        <div class="text-5xl font-extrabold">:</div>
+                        <div class="text-5xl font-extrabold">15 <br><span class="text-sm font-medium text-center">Hours</span></div>
+                        <div class="text-5xl font-extrabold">:</div>
+                        <div class="text-5xl font-extrabold">25 <br><span class="text-sm font-medium text-center">Minutes</span> </div>
+                        <div class="text-5xl font-extrabold">:</div>
+                        <div class="text-5xl font-extrabold">08 <br><span class="text-sm font-medium text-center">Seconds</span> </div>
+                    </div>
+                </div>
+            </div>
 
+        </section>
     </main>
 
     <footer>
